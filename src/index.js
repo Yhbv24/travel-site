@@ -4,12 +4,15 @@ import { BrowserRouter as Router, HashRouter, Route, Link } from 'react-router-d
 import './index.css';
 import Home from './Home.js';
 import About from './About.js';
+import NavigationMenu from './NavigationMenu.js';
 import Footer from './Footer.js';
 
 ReactDOM.render(
   <Router history={HashRouter}>
     <div>
-      <Route path='/' component={Home} />
-      <Route path='/about' component={About} />
+      <NavigationMenu />
+      <Route exact path='/' component={Home} />
+      <Route exact path='/about' component={About} />
+      <Footer />
     </div>
   </Router>, document.getElementById('root'));

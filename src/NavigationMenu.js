@@ -7,9 +7,10 @@ class NavigationMenu extends Component {
     return(
       <nav>
         <ul>
+          <Link to="/"><li id="home">Home</li></Link>
           <li>Log In</li>
           <li>Sign Up</li>
-          <li><Link to='/about'>About</Link></li>
+          <Link to='/about'><li>About</li></Link>
         </ul>
       </nav>
     )
