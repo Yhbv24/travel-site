@@ -2,12 +2,12 @@ ul {
   font-weight: 100;
   font-size: 2em;
   width: 100vw;
-  height: 70px;
+  height: 65px;
   margin: 0;
   padding: 0;
   list-style: none;
   overflow: hidden;
-  background-color: rgba(175, 175, 175, 0.2);
+  background-color: rgba(175, 175, 175, 0.4);
   text-align: right;
 }
 
@@ -16,16 +16,16 @@ li {
   padding: 15px;
   margin-left: 10px;
   margin-right: 10px;
+  transition: 0.2s;
+  &:hover {
+    background-color: rgba(175, 175, 175, 0.7);
+    transition: 0.2s;
+  }
 }
 
 a {
   text-decoration: none;
   color: black;
-  transition: 0.2s;
-  &:hover {
-    transition: 0.2s;
-    color: green;
-  }
 }
 
 #home {

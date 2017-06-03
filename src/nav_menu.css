@@ -2,29 +2,62 @@ ul {
   font-weight: 100;
   font-size: 2em;
   width: 100vw;
-  height: 70px;
+  height: 65px;
   margin: 0;
   padding: 0;
   list-style: none;
   overflow: hidden;
-  background-color: rgba(175, 175, 175, 0.2);
+  background-color: rgba(175, 175, 175, 0.4);
   text-align: right; }
 
 li {
   display: inline-block;
   padding: 15px;
   margin-left: 10px;
-  margin-right: 10px; }
+  margin-right: 10px;
+  transition: 0.2s; }
+  li:hover {
+    background-color: rgba(175, 175, 175, 0.7);
+    transition: 0.2s; }
 
 a {
   text-decoration: none;
-  color: black;
-  transition: 0.2s; }
-  a:hover {
-    transition: 0.2s;
-    color: green; }
+  color: black; }
 
 #home {
   float: left; }
+
+.notLoaded {
+  /* default state of nav bar elements */
+  opacity: 0; }
+
+.fadeIn {
+  animation-name: fadeIn;
+  animation-duration: 2s; }
+
+@keyframes fadeIn {
+  /* used to fade elements of nav bar in */
+  0% {
+    opacity: 0; }
+  10% {
+    opacity: 0.1; }
+  20% {
+    opacity: 0.2; }
+  30% {
+    opacity: 0.3; }
+  40% {
+    opacity: 0.4; }
+  50% {
+    opacity: 0.5; }
+  60% {
+    opacity: 0.6; }
+  70% {
+    opacity: 0.7; }
+  80% {
+    opacity: 0.8; }
+  90% {
+    opacity: 0.9; }
+  100% {
+    opacity: 1; } }
 
 /*# sourceMappingURL=nav_menu.css.map */
